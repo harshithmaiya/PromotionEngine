@@ -62,6 +62,7 @@ namespace PromotionEngineTests
                     Quantity = 1
                 }
             };
+
             PromotionEngine.PromotionEngine promotionEngine = new PromotionEngine.PromotionEngine();
             promotionEngine.ReadPromotionsFromFile();
             long total = promotionEngine.CalculateTotal(productsSelected, productFixedPrices);
